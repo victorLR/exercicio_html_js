@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário da Subtenência</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Subtenência</h1>
+        <h2>Distribuição de Materiais</h2>
+        <form id="form-subtenencia">
+            <input  type="text" id="nome-oficial" required placeholder="Nome completo do Oficial de Dia" />
+            <input type="number" id="numero-fornecido" required placeholder="Número de equipamentos fornecidos" />
+            <input type="number" id="valor-reposto" required placeholder="número de equipamentos repostos" />            <p class="error-message">
+                O número de equipamentos repostos somados ou não com equipamentos novos, devem ser iguais ou maiores que os fornecidos!
+                </p>
+            <input type="number" id="material-novo" required placeholder="número de equipamentos novos adicionados a reposição" />
+            <textarea placeholder="Descrição (opcional)" id="descrição"></textarea>
+            <button id="btn-depositar" type="submit">GUARDAR</button>
+        </form>
+        <p class= "success-message">
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
